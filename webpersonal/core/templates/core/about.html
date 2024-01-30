@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+  Acerda de
+{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+  <h1>Acerca de</h1>
+  <span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+      <img class="img-fluid avatar" src="{% static 'core/img/agustinmassa.jpeg' %}" alt="" />
+    </div>
+    <div class="col-lg-7 col-md-8">
+      <h2 class="section-heading">Agustin Massa</h2>
+      <p>Nacido en Cañada Rosquin prvincia de Santa Fe, actualmente estoy viviendo en Rosario 
+      y tengo 26 años de edad.</p>
+      <p>Soy un Desarrollador Backend Junior con experiencia en Python y Django. Tengo un fuerte interés
+      en el desarrollo de aplicaciones web. Tengo un conocimiento sólido de Python y Django, y
+      estoy aprendiendo continuamente nuevas tecnologías y habilidades. Además, soy
+      estudiante avanzado de Ingeniería Química, a 6 materias de recibirme.</p>
+    </div>
+  </div>
+{% endblock %}
